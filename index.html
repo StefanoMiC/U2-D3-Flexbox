@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox playground</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
+        .container {
+            /* max-width: 992px; */
+            margin-top: 2rem;
+            margin-right: auto;
+            margin-left: auto;
+            min-height: 40vh;
+            background-color: #e9e9e9;
+
+
+            display: flex;
+            /* flex-direction: column; */
+            /* gap: 10px; */
+        }
+
+
+        .box {
+            width: 150px;
+            flex-grow: 1;
+            /* height: 280px; */
+            /* display: inline-block; */
+
+            /* margin-right: 1rem; */
+        }
+
+        /* .box:last-of-type {
+            margin-right: 0;
+        } */
+
+
+
+        .clr-coral {
+            background-color: coral;
+
+        }
+
+        .clr-aqua {
+            background-color: aquamarine;
+            flex-shrink: 0;
+            flex-basis: 300px;
+            background-image: url(https://images.unsplash.com/photo-1593530116182-77f4ff70c13a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+            background-size: cover;
+        }
+
+        .clr-violetred {
+            background-color: palevioletred;
+        }
+
+
+        .clr-blue {
+            background-color: cornflowerblue
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                min-height: 80vh;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            .clr-aqua {
+                flex-grow: 5;
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box clr-coral">
+            <!-- <img src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc="
+                alt="" width="100"> -->
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident consequatur
+                voluptatibus
+            </p> -->
+        </div>
+        <div class="box clr-aqua">
+            <!-- <img src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc="
+                alt="" width="100"> -->
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident consequatur
+                voluptatibus
+            </p> -->
+        </div>
+        <div class="box clr-blue">
+            <!-- <img src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc="
+                alt="" width="100"> -->
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident consequatur
+                voluptatibus
+            </p> -->
+
+        </div>
+        <div class="box clr-violetred">
+            <!-- <img src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc="
+                alt="" width="100"> -->
+            <!-- <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta provident consequatur
+                voluptatibus
+            </p> -->
+
+        </div>
+
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempora praesentium accusantium delectus,
+            eos
+            natus accusamus adipisci optio assumenda quam, voluptatibus maiores nisi labore recusandae repudiandae
+            quisquam
+            eveniet voluptas expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempora praesentium accusantium delectus,
+            eos
+            natus accusamus adipisci optio assumenda quam, voluptatibus maiores nisi labore recusandae repudiandae
+            quisquam
+            eveniet voluptas expedita.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempora praesentium accusantium delectus,
+            eos
+            natus accusamus adipisci optio assumenda quam, voluptatibus maiores nisi labore recusandae repudiandae
+            quisquam
+            eveniet voluptas expedita.</p> -->
+
+    </div>
+</body>
+
+</html>

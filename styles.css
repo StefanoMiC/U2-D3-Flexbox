@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  background: linear-gradient(180deg, #0b184b 0%, #090922 100%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./gslides_bg_main.png");
+  background-size: cover;
+  min-height: calc(100vh - 111px);
+}
+
+.hero {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.hero .content {
+  width: 50%;
+}
+
+.hero .content h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 1.6rem;
+}
+
+.hero .content p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hero .content .main-cta {
+  background-color: #00ffff;
+  padding: 1rem 6rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hero,
+.stats {
+  padding: 2rem 6rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    95.5deg,
+    rgba(0, 0, 0, 0.4) -21.06%,
+    rgba(194, 18, 141, 0.4) 57.26%,
+    rgba(45, 39, 223, 0.4) 107.91%
+  );
+}
+
+.stats h4 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+footer {
+  height: 100vh;
+  background-color: black;
+}
